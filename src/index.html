@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Link</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- Section Profile -->
+    <section id="profile" class="flex flex-col items-center justify-center py-10 bg-gray-800 w-full">
+        <div class="w-full bg-gray-800">
+            <div class="relative flex flex-col items-center max-w-screen-lg mx-auto">
+                <!-- Background Image with Border Radius -->
+                <div class="w-full h-64 bg-cover bg-center rounded-xl border-4 border-gray-800 mx-1"
+                    style="background-image: url('back.png');"></div>
+
+                <!-- Profile Image -->
+                <img src="profile.jpg" alt="Profile"
+                    class="w-32 h-32 rounded-full border-4 border-gray-800 relative -mt-16 z-10">
+            </div>
+        </div>
+
+        <section class="text-center px-4">
+            <h1 class="mt-8 text-2xl font-semibold">Hariansyah Fajrin</h1>
+            <p class="text-gray-400 mt-4 mx-auto max-w-2xl leading-relaxed text-justify" style="text-align: justify;">
+                I am a graduate of Padang State Polytechnic with a Diploma in Informatics Management (D3) from the
+                Department of Information Technology with a GPA of 3.51. I have expertise in operating Microsoft Office
+                programs (Word, Excel, PowerPoint) for document processing, data analysis, and presentations. In
+                addition, I also have in-depth knowledge of programming languages and technologies such as HTML, CSS,
+                PHP (native), Laravel, Flutter, MySQL, and C++.
+
+                I am highly motivated to continue developing my skills, with a particular focus on web and mobile
+                application development, as well as in the business field. I am passionate about contributing to the
+                development of data and technology through high skills and dedication.
+            </p>
+        </section>
+
+
+        <div class="flex space-x-4 mt-4">
+            <a href="https://github.com/Hariansyahfajrin" target="_blank"
+                class="bg-white p-4 rounded-full relative overflow-hidden w-12 h-12 flex items-center justify-center">
+                <i class="bx bxl-github text-gray-800 text-2xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/hariansyah-fajrin-70a3aa218" target="_blank"
+                class="bg-white p-4 rounded-full relative overflow-hidden w-12 h-12 flex items-center justify-center">
+                <i class="bx bxl-linkedin text-gray-800 text-2xl"></i>
+            </a>
+            <a href="https://instagram.com/hariansyahfajrin" target="_blank"
+                class="bg-white p-4 rounded-full relative overflow-hidden w-12 h-12 flex items-center justify-center">
+                <i class="bx bxl-instagram text-blue-500 text-2xl"></i>
+            </a>
+        </div>
+
+        <!-- WA & Email -->
+        <div class="flex space-x-4 mt-4">
+            <a href="https://wa.me/+6281374149917" target="_blank"
+                class="px-4 py-2 bg-green-500 rounded-lg">WhatsApp</a>
+            <a href="mailto:hariansyahfajrin9@gmail.com"
+                class="px-4 py-2 bg-gray-700 rounded-lg flex items-center justify-center">
+                <i class="bx bx-envelope text-xl text-white"></i>
+            </a>
+
+        </div>
+
+        <!-- Section Buttons -->
+        <div class="flex justify-center space-x-4 mt-8">
+            <button id="portfolioButton" onclick="showSection('portfolio', this)"
+                class="px-6 py-2 bg-gray-600 rounded-lg hover:bg-gray-700">Portfolio</button>
+            <button id="certificatesButton" onclick="showSection('certificates', this)"
+                class="px-6 py-2 bg-gray-600 rounded-lg hover:bg-gray-700">Certificates</button>
+            <button id="courseButton" onclick="showSection('course', this)"
+                class="px-6 py-2 bg-gray-600 rounded-lg hover:bg-gray-700">Course</button>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section id="portfolio" class="py-16 bg-gray-900 hidden">
+        <h2 class="text-center text-3xl font-semibold mb-8">Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+            <div class="text-center">
+                <img src="porto2.png" alt="Portfolio 3" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Data Analyst With Looker Studio.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto3.png" alt="Portfolio 4" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Data Analyst With Looker Studio.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto5.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Data Analyst With Excel.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto20.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Data Analyst With Google SpreedSheet.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto6.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Webinar Management Trainee with Cake.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto21.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project Development with Jira.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto22.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project Development with Jira.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto8.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 1: Saas Website with Laravel,tailwind,MySql.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto9.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 1: Saas Website with Laravel,tailwind,MySql.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto11.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 1: Saas Website with Laravel,tailwind,MySql.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto10.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Learning Oddo,management POS with oddo.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto12.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 2: PT.Inovasi Mitra Sejati, Intership multifinance project with
+                    Asp
+                    .Net,C#,Postgresql(Dbeaver),Make IfinSLIK module/Loan system.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto17.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 2: PT.Inovasi Mitra Sejati, Intership multifinance project with
+                    Asp
+                    .Net,C#,Postgresql(Dbeaver),Make IfinSLIK module/Loan system.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto18.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 2: Intership multifinance project with Asp
+                    .Net,C#,Postgresql(Dbeaver),Make IfinSLIK module/Loan system.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto19.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Belajar Software Unreal Engine 5 dalam pembuatan game.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto1.png" alt="Portfolio 2" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 3: Inventory & E-commerce with flutter,nodejs,monggoDB. Also use
+                    third api :Midtrans,onesignal.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto7.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 3: Inventory & E-commerce with flutter,nodejs,monggoDB. Also use
+                    third api :Midtrans,onesignal.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto13.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 3: Inventory & E-commerce with flutter,nodejs,monggoDB. Also use
+                    third api :Midtrans,onesignal.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto14.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 3: Inventory & E-commerce with flutter,nodejs,monggoDB. Also use
+                    third api :Midtrans,onesignal.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto15.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 3: Inventory & E-commerce with flutter,nodejs,monggoDB. Also use
+                    third api :Midtrans,onesignal.</p>
+            </div>
+            <div class="text-center">
+                <img src="porto16.png" alt="Portfolio 5" class="w-full rounded-lg">
+                <p class="mt-2 text-gray-400">Project 3: Inventory & E-commerce with flutter,nodejs,monggoDB. Also use
+                    third api :Midtrans,onesignal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Certificates -->
+    <section id="certificates" class="py-16 bg-gray-900 hidden">
+        <h2 class="text-center text-3xl font-semibold mb-8">Certificate</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+            <div class="text-center">
+                <img src="sertif1.jpg" alt="Certificate 1" class="w-full h-80 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Certificate Oracle.</p>
+            </div>
+            <div class="text-center">
+                <img src="sertif2.png" alt="Certificate 2" class="w-full h-80 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Certificate Toefl.</p>
+            </div>
+            <div class="text-center">
+                <img src="sertif11.png" alt="Certificate 2" class="w-full h-80 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Certificate Project with Jira.</p>
+            </div>
+            <div class="text-center">
+                <img src="sertif3.png" alt="Certificate 3" class="w-full h-80 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Certificate Digital Maketing.</p>
+            </div>
+            <div class="text-center">
+                <img src="sertif4.png" alt="Certificate 4" class="w-full h-80 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Certificate Oracle.</p>
+            </div>
+            <div class="text-center">
+                <img src="sertif5.png" alt="Certificate 5" class="w-full h-80 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Certificate Oracle.</p>
+            </div>
+            <div class="text-center">
+                <img src="sertif6.png" alt="Certificate 6" class="w-full h-80 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Certificate Oracle.</p>
+            </div>
+            <div class="text-center">
+                <img src="sertif8.png" alt="Certificate 8" class="w-full h-80 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Certificate Oracle.</p>
+            </div>
+            <div class="text-center">
+                <img src="sertif9.png" alt="Certificate 9" class="w-full h-80 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Certificate Oracle.</p>
+            </div>
+            <div class="text-center">
+                <img src="sertif10.png" alt="Certificate 10" class="w-full h-80 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Certificate Oracle.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="course" class="py-16 bg-gray-900 hidden">
+        <h2 class="text-center text-3xl font-semibold mb-8">Ongoing-Course</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+            <div class="text-center">
+                <img src="kursus1.png" alt="Course 1" class="w-full h-85 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Course IBM: Data Visualization and Dashboards with Excel and Cognos.</p>
+            </div>
+            <div class="text-center">
+                <img src="kursus2.png" alt="Course 2" class="w-full h-85 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Course SkillUp EdTech: Business Analysis: Process Modeling & Requirements
+                    Gathering.</p>
+            </div>
+            <div class="text-center">
+                <img src="kursus3.png" alt="Course 3" class="w-full h-85 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Course SkillUp EdTech: Business Analysis: Project and Stakeholder
+                    Management.</p>
+            </div>
+            <div class="text-center">
+                <img src="kursus4.png" alt="Course 4" class="w-full h-85 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Course IBM: Introduction to Business Analysis
+                    .</p>
+            </div>
+            <div class="text-center">
+                <img src="kursus5.png" alt="Course 5" class="w-full h-85 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Course IBM: Excel Basics for Data Analysis
+                    .</p>
+            </div>
+            <div class="text-center">
+                <img src="kursus6.png" alt="Course 6" class="w-full h-85 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Course IBM: Cloud Computing.</p>
+            </div>
+            <div class="text-center">
+                <img src="kursus7.png" alt="Course 7" class="w-full h-85 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Course IESE Business School: Accounting: Principles of Financial
+                    Accounting.</p>
+            </div>
+            <div class="text-center">
+                <img src="kursus8.png" alt="Course 8" class="w-full h-85 object-cover rounded-lg">
+                <p class="mt-2 text-gray-400">Course Cisco Learning and Certifications: Network Security.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        function showSection(sectionId, button) {
+            // Hide all sections
+            document.querySelectorAll('#portfolio, #certificates, #course').forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Reset all buttons to inactive
+            document.querySelectorAll('button').forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+                btn.classList.add('bg-gray-600', 'hover:bg-gray-700');
+            });
+
+            // Show the selected section and highlight the button
+            document.getElementById(sectionId).classList.remove('hidden');
+            button.classList.add('bg-blue-600', 'hover:bg-blue-700');
+        }
+
+        // Default section to show on page load
+        window.onload = function () {
+            const defaultButton = document.getElementById('portfolioButton');
+            showSection('portfolio', defaultButton);
+        };
+    </script>
+
+</body>
+
+</html>
